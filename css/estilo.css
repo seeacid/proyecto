@@ -59,6 +59,10 @@ body {
       top: 15px; }
       body .contHeader .navList .prod:hover ul {
         display: block; }
+        body .contHeader .navList .prod:hover ul li a {
+          color: #747474; }
+          body .contHeader .navList .prod:hover ul li a:hover {
+            color: #222222; }
       body .contHeader .navList .prod ul {
         position: absolute;
         top: 30px;
@@ -66,7 +70,9 @@ body {
         background-color: white;
         padding-top: 0;
         box-shadow: 2px 2px 10px black;
-        z-index: 1; }
+        z-index: 1;
+        padding-left: auto;
+        padding-right: auto; }
         body .contHeader .navList .prod ul a {
           font-family: "Roboto", sans-serif;
           font-weight: lighter;
