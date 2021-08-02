@@ -62,19 +62,19 @@
         <div class="seccion__formulario">
             <fieldset><legend>Formulario de contacto</legend>
             <form action="#">
-                <div>
+                <div class="divform">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 </div>
-                <div>
+                <div class="divform">
                     <label for="apellido">Apellido</label>
                     <input type="text" name="apellido" placeholder="Escribe tu apellido">
                 </div>
-                <div>
+                <div class="divform">
                     <label for="email">Enviar mail</label>
                     <input type="email" name="email" placeholder="mail" required>
                 </div>
-                <div>
+                <div class="divform">
                     <label for="pais">Selecciona tu pais</label>
                     <select name="pais" id="">
                     <option value="argentina">Argentina</option>
@@ -82,18 +82,18 @@
                     <option value="Chile">Chile</option>
                     </select>  
                 </div>
-                <div>
+                <div class="divform">
                     <label for="genero">Genero</label>
                     <input type="radio" name="genero" value="mujer">Mujer
                     <input type="radio" name="genero" value="hombre">Hombre
                     <input type="radio" name="genero" value="nn">Prefiero no decirlo
                 </div>
 
-                <div>
+                <div class="divform">
                     <label for="tyc">Acepto Terminos y condiciones</label>
                     <input type="checkbox" name="tyc" required>
                 </div>
-                <div>
+                <div class="divform">
                     <label for="comm">Comentarios</label>
                     <textarea name="comm" id="" cols="30" rows="10"></textarea>
                 </div>
@@ -101,10 +101,11 @@
 
 
 
-                <div>
+                <div class="divform">
                 <input type="submit" value="Enviar Datos">
                 </div>
-                <div>
+
+                <div class="divform">
                 <input type="reset" value="Borrar">
                 </div>
             </form>

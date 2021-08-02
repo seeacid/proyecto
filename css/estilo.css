@@ -70,9 +70,7 @@ body {
         background-color: white;
         padding-top: 0;
         box-shadow: 2px 2px 10px black;
-        z-index: 1;
-        padding-left: auto;
-        padding-right: auto; }
+        z-index: 1; }
         body .contHeader .navList .prod ul a {
           font-family: "Roboto", sans-serif;
           font-weight: lighter;
@@ -87,7 +85,8 @@ body {
     font-family: "Dela Gothic One", cursive;
     font-weight: lighter; }
     body .seccion .seccion__lista li {
-      margin: 20px; }
+      margin: 20px;
+      padding: 20px; }
     body .seccion .seccion__grilla {
       position: relative;
       left: 25%;
@@ -134,6 +133,9 @@ body {
       height: 500px;
       position: relative;
       top: 15px; }
+      body .seccion .seccion__formulario .divform {
+        padding: 5px;
+        margin: 5px; }
     body .seccion a {
       text-decoration: none;
       color: black;
@@ -195,31 +197,3 @@ body {
       display: inline; }
     body .contFooter .footElement p {
       display: inline; }
-
-@media only screen and (max-width: 767px) and (min-width: 5px) {
-  header {
-    height: 30%; }
-  video {
-    width: 200px; }
-  .carrx {
-    width: 80%;
-    height: 80%; }
-  .titulo img {
-    width: 70px; }
-  .navList ul {
-    display: block; }
-  .navList li {
-    display: block;
-    margin: 10px; }
-  .prod ul li {
-    display: none; } }
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .navList li {
-    padding-left: 20px;
-    padding-right: 20px; }
-  .carrx {
-    width: 60%;
-    height: 60%; }
-  video {
-    width: 300px; } }
