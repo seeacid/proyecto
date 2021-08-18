@@ -7,20 +7,56 @@
 }
 
 body{
-    background-color: black;
+    width: 100%;
+    background-color:white;
     color: white;
     text-align: center;
     header{
         height: 10rem;
         background-color: black;
     }
+    .dest{
+        display: inline-block;
+        .destacados{
+            
+            margin-left: 6rem;
+            margin-right: 6rem;
+            width: 450px;
+            display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+                flex-wrap: wrap;
+            color: black;
+            font-family: "Dela Gothic One", cursive;
+            font-weight: lighter;
+            img{
+                width: 200px;
+                &:hover{
+                    transition: all 0.4s ease;
+                    transform: scale(1.5,1.5);
+                }
+            }
+        }
+    }
     .contHeader{
+        height: 100%;
+        background-color: black;
         .titulo{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             position: relative;
+            a{
+                font-family: "Dela Gothic One", cursive;
+                font-style: oblique;
+                letter-spacing: 0pt;
+                display: inline-block;
+                color: white; 
+                
+            }
             img{
                 width: 100px;
                 position: static;
@@ -47,6 +83,16 @@ body{
             font-weight: lighter;
             font-style: italic;
             letter-spacing: 1.5px; 
+            @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                font-size: 20pt;
+                margin-bottom: 5rem;
+                margin-top: 5rem;
+            }
+            @media only screen and (max-width: 767px) and (min-width: 5px) {
+                font-size: 28pt;
+                margin-bottom: 5rem;
+                margin-top: 5rem;
+            }
             &:hover{
                 color: rgb(170, 170, 170);
             }
@@ -60,6 +106,9 @@ body{
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                @media only screen and (max-width: 1023px) and (min-width: 5px) {
+                    flex-direction: column;
+                } 
             }
             li{
                 display: inline-block;
@@ -71,7 +120,9 @@ body{
                 &:hover{
                     ul{
                         display: block;
-                        
+                        @media only screen and (max-width: 1023px) and (min-width: 5px) {
+                            display:none;
+                        }
                         li{
                             a{  
                                 color: rgb(116, 116, 116);
@@ -180,12 +231,23 @@ body{
             }
         }
         .seccion__formulario{
-            height: 500px;
+            height: 35rem;
             position: relative;
             top: 15px;
             .divform{
+                font-family: "Roboto", sans-serif;
                 padding: 5px;
                 margin: 5px;
+            }
+            .divform_btn{
+                padding: 0.4rem;
+                margin: 0.5rem;
+                input{
+                    border: solid 1px black;
+                    padding: 0.5rem;
+                    font-family: "Dela Gothic One", cursive;
+                }
+
             }
         }
         a{
@@ -206,6 +268,15 @@ body{
             width: 40%;
             height: 40%;
             margin: auto;
+            padding: 40px;
+            @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                width: 80%;
+                height: 80%;  
+            }
+            @media only screen and (max-width: 768px) and (min-width: 5px) {
+                width: 90%;
+                height: 90%; 
+            }
         }
         form {
             font-family: "Roboto", sans-serif;
@@ -252,6 +323,7 @@ body{
                 padding-right: 100px;
                 img{
                     &:hover{
+                        transition: all 0.4s ease;
                         transform: scale(1.5, 1.5);   
                     }
                 }
@@ -259,16 +331,135 @@ body{
         }
     }
     .contFooter{
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        align-content: flex-start;
         background-color: white;
         color: black;
-        font-family: "Roboto", sans-serif;
+        font-family: "Dela Gothic One", cursive;
         line-height: 25pt;
-        .footElement{
-            img{
-                display: inline;
+        h5{
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: lighter;
+        }
+        .navegacion{
+            height: 9rem;
+            width: 25%;
+            display:inline-block;
+            @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                display:block;
+                width: 50%;
+                margin-bottom: 30px;
             }
-            p{
-                display: inline;
+            @media only screen and (max-width: 767px) and (min-width: 5px) {
+                display:block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            
+            a{
+                display: block;
+                font-family: "Roboto", sans-serif;
+                text-decoration: none;
+                color: black;
+                font-size: 12pt;
+                font-weight: bolder;
+                font-style: italic;
+                letter-spacing: 0px; 
+                line-height: 1.5rem;
+                &:hover{
+                    color: rgb(59, 59, 59);
+                }
+            }
+        }
+        .footContacto{
+            height: 9rem;
+            display: inline-block;
+            width: 25%;
+            @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                display:block;
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            @media only screen and (max-width: 767px) and (min-width: 5px) {
+                display:block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .footElement{
+                img{
+                    display: inline;
+                }
+                a{
+                    display: inline;
+                    font-family: "Roboto", sans-serif;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 12pt;
+                    font-weight: bolder;
+                    font-style: italic;
+                    letter-spacing: 1.5px; 
+                    &:hover{
+                        color: rgb(59, 59, 59);
+                    }
+                }
+            }
+        }  
+        .mediosPago{
+            height: 9rem;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 25%;
+            @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                display:block;
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            @media only screen and (max-width: 767px) and (min-width: 5px) {
+                display:block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }  
+        .newsletter{
+            height: 9rem;
+            display: inline-block;
+            width: 25%;
+            @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                display:block;
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            @media only screen and (max-width: 767px) and (min-width: 5px) {
+                display:block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            input[type="text"] {
+                 height: 2.25rem; 
+                 font-family: "Dela Gothic One", cursive;
+
+                }
+
+          
+            .submitBtn{
+                .send{
+                    position: absolute;
+                    width: 2.25rem;
+                }
+                input{
+                    display: inline-block;
+                    background-color: white;
+                    margin: 0rem;
+                    padding: 0rem;
+                }
             }
         }
     }
