@@ -17,6 +17,7 @@ body{
     }
     .dest{
         display: inline-block;
+        margin-bottom: 3rem;
         .destacados{
             
             margin-left: 6rem;
@@ -183,16 +184,32 @@ body{
               "img car"
               "img ins"
               "comprar size";
+            @media only screen and (max-width: 1023px) and (min-width: 5px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex-wrap: wrap;
+                height: 100%;
+            }
 
             .seccion__grilla__foto{
                 grid-area: img;
                 justify-self: end;
                 align-self: end;
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    display: block;
+                }
+
             }
             .seccion__grilla__caracteristicas {
                 grid-area: car;
                 justify-self: start;
                 align-self: end;
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    display: block;
+                }
                 ul{
                     li{
                         text-align: left;
@@ -202,6 +219,9 @@ body{
             .seccion__grilla__instrucciones {
                 grid-area: ins;
                 justify-self: start;
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    display: block;
+                }
                 ol{
                     li{
                         text-align: left;
@@ -212,6 +232,9 @@ body{
                 grid-area: size;
                 align-self: start;
                 margin-bottom: 2rem;
+                @media only screen and (max-width: 1023px) and (min-width: 768px) {
+                    display: block;
+                }
             }
             .sizeChart table {
                 width: 300px;
@@ -219,14 +242,20 @@ body{
                 margin: 0 auto;
                 text-align: center;
                 font-family: "Roboto", sans-serif;
+                
             }
             .seccion__grilla__comprar{
+                @media only screen and (max-width: 1023px) and (min-width: 5px) {
+                    display: block;
+                    padding: 30px;
+                }
                 h2{
                     grid-area: comprar;
                     text-decoration: none;
                     padding-bottom: 10px;
                     padding-top: 10px;
                     margin: 0px;
+                    
                 }
             }
         }
@@ -235,9 +264,11 @@ body{
             position: relative;
             top: 15px;
             .divform{
-                font-family: "Roboto", sans-serif;
+                font-family: "Dela Gothic One", cursive;
                 padding: 5px;
                 margin: 5px;
+                font-weight: lighter;
+                font-size: 12px;
             }
             .divform_btn{
                 padding: 0.4rem;
@@ -246,6 +277,8 @@ body{
                     border: solid 1px black;
                     padding: 0.5rem;
                     font-family: "Dela Gothic One", cursive;
+                    background-color: black;
+                    color: white;
                 }
 
             }
@@ -331,6 +364,7 @@ body{
         }
     }
     .contFooter{
+        border-top: 2px rgb(182, 182, 182) solid;
         height: 10rem;
         display: flex;
         flex-direction: row;
@@ -349,6 +383,7 @@ body{
             font-weight: lighter;
         }
         .navegacion{
+            margin-top: 2rem;
             height: 9rem;
             width: 25%;
             display:inline-block;
@@ -379,6 +414,7 @@ body{
             }
         }
         .footContacto{
+            margin-top: 2rem;
             height: 9rem;
             display: inline-block;
             width: 25%;
@@ -412,9 +448,8 @@ body{
             }
         }  
         .mediosPago{
+            margin-top: 2rem;
             height: 9rem;
-            margin: 0;
-            padding: 0;
             display: inline-block;
             width: 25%;
             @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -429,6 +464,7 @@ body{
             }
         }  
         .newsletter{
+            margin-top: 2rem;
             height: 9rem;
             display: inline-block;
             width: 25%;

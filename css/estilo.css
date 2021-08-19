@@ -12,7 +12,8 @@ body {
     height: 10rem;
     background-color: black; }
   body .dest {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 3rem; }
     body .dest .destacados {
       margin-left: 6rem;
       margin-right: 6rem;
@@ -144,31 +145,56 @@ body {
       grid-template-rows: 1fr 1fr 1fr;
       gap: 0px 0px;
       grid-template-areas: "img car" "img ins" "comprar size"; }
+      @media only screen and (max-width: 1023px) and (min-width: 5px) {
+        body .seccion .seccion__grilla {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          flex-wrap: wrap;
+          height: 100%; } }
       body .seccion .seccion__grilla .seccion__grilla__foto {
         grid-area: img;
         justify-self: end;
         align-self: end; }
+        @media only screen and (max-width: 1023px) and (min-width: 768px) {
+          body .seccion .seccion__grilla .seccion__grilla__foto {
+            display: block; } }
       body .seccion .seccion__grilla .seccion__grilla__caracteristicas {
         grid-area: car;
         justify-self: start;
         align-self: end; }
+        @media only screen and (max-width: 1023px) and (min-width: 768px) {
+          body .seccion .seccion__grilla .seccion__grilla__caracteristicas {
+            display: block; } }
         body .seccion .seccion__grilla .seccion__grilla__caracteristicas ul li {
           text-align: left; }
       body .seccion .seccion__grilla .seccion__grilla__instrucciones {
         grid-area: ins;
         justify-self: start; }
+        @media only screen and (max-width: 1023px) and (min-width: 768px) {
+          body .seccion .seccion__grilla .seccion__grilla__instrucciones {
+            display: block; } }
         body .seccion .seccion__grilla .seccion__grilla__instrucciones ol li {
           text-align: left; }
       body .seccion .seccion__grilla .seccion__grilla__talles {
         grid-area: size;
         align-self: start;
         margin-bottom: 2rem; }
+        @media only screen and (max-width: 1023px) and (min-width: 768px) {
+          body .seccion .seccion__grilla .seccion__grilla__talles {
+            display: block; } }
       body .seccion .seccion__grilla .sizeChart table {
         width: 300px;
         height: 300px;
         margin: 0 auto;
         text-align: center;
         font-family: "Roboto", sans-serif; }
+      @media only screen and (max-width: 1023px) and (min-width: 5px) {
+        body .seccion .seccion__grilla .seccion__grilla__comprar {
+          display: block;
+          padding: 30px; } }
       body .seccion .seccion__grilla .seccion__grilla__comprar h2 {
         grid-area: comprar;
         text-decoration: none;
@@ -180,16 +206,20 @@ body {
       position: relative;
       top: 15px; }
       body .seccion .seccion__formulario .divform {
-        font-family: "Roboto", sans-serif;
+        font-family: "Dela Gothic One", cursive;
         padding: 5px;
-        margin: 5px; }
+        margin: 5px;
+        font-weight: lighter;
+        font-size: 12px; }
       body .seccion .seccion__formulario .divform_btn {
         padding: 0.4rem;
         margin: 0.5rem; }
         body .seccion .seccion__formulario .divform_btn input {
           border: solid 1px black;
           padding: 0.5rem;
-          font-family: "Dela Gothic One", cursive; }
+          font-family: "Dela Gothic One", cursive;
+          background-color: black;
+          color: white; }
     body .seccion a {
       text-decoration: none;
       color: black;
@@ -253,6 +283,7 @@ body {
           transition: all 0.4s ease;
           transform: scale(1.5, 1.5); }
   body .contFooter {
+    border-top: 2px #b6b6b6 solid;
     height: 10rem;
     display: flex;
     flex-direction: row;
@@ -270,6 +301,7 @@ body {
       font-size: 1.1rem;
       font-weight: lighter; }
     body .contFooter .navegacion {
+      margin-top: 2rem;
       height: 9rem;
       width: 25%;
       display: inline-block; }
@@ -296,6 +328,7 @@ body {
         body .contFooter .navegacion a:hover {
           color: #3b3b3b; }
     body .contFooter .footContacto {
+      margin-top: 2rem;
       height: 9rem;
       display: inline-block;
       width: 25%; }
@@ -323,9 +356,8 @@ body {
         body .contFooter .footContacto .footElement a:hover {
           color: #3b3b3b; }
     body .contFooter .mediosPago {
+      margin-top: 2rem;
       height: 9rem;
-      margin: 0;
-      padding: 0;
       display: inline-block;
       width: 25%; }
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -339,6 +371,7 @@ body {
           width: 100%;
           margin-bottom: 30px; } }
     body .contFooter .newsletter {
+      margin-top: 2rem;
       height: 9rem;
       display: inline-block;
       width: 25%; }
