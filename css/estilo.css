@@ -4,7 +4,6 @@
   box-sizing: border-box; }
 
 body {
-  width: 100%;
   background-color: white;
   color: white;
   text-align: center; }
@@ -14,10 +13,14 @@ body {
   body .dest {
     display: inline-block;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 767px) and (min-width: 5px) {
+      body .dest {
+        max-width: 80%; } }
     body .dest .destacados {
       margin-left: 6rem;
       margin-right: 6rem;
-      width: 450px;
+      width: 30rem;
+      background-color: red;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -29,9 +32,17 @@ body {
       font-weight: lighter; }
       body .dest .destacados img {
         width: 200px; }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .dest .destacados img {
+            width: 100px; } }
         body .dest .destacados img:hover {
           transition: all 0.4s ease;
           transform: scale(1.5, 1.5); }
+      @media only screen and (max-width: 767px) and (min-width: 5px) {
+        body .dest .destacados {
+          width: 50%;
+          justify-content: center;
+          display: block; } }
   body .contHeader {
     height: 100%;
     background-color: black; }
@@ -131,6 +142,9 @@ body {
     color: black;
     font-family: "Dela Gothic One", cursive;
     font-weight: lighter; }
+    @media only screen and (max-width: 767px) and (min-width: 5px) {
+      body .seccion {
+        width: 80%; } }
     body .seccion .seccion__lista li {
       margin: 20px;
       padding: 20px; }
@@ -289,13 +303,15 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
     flex-wrap: wrap;
     align-content: flex-start;
     background-color: white;
     color: black;
     font-family: "Dela Gothic One", cursive;
     line-height: 25pt; }
+    @media only screen and (max-width: 767px) and (min-width: 5px) {
+      body .contFooter {
+        max-width: 100%; } }
     body .contFooter h5 {
       text-align: center;
       font-size: 1.1rem;
@@ -308,12 +324,12 @@ body {
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
         body .contFooter .navegacion {
           display: block;
-          width: 50%;
+          width: 40%;
           margin-bottom: 30px; } }
       @media only screen and (max-width: 767px) and (min-width: 5px) {
         body .contFooter .navegacion {
           display: block;
-          width: 100%;
+          width: 80%;
           margin-bottom: 30px; } }
       body .contFooter .navegacion a {
         display: block;
@@ -335,12 +351,12 @@ body {
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
         body .contFooter .footContacto {
           display: block;
-          width: 50%;
+          width: 40%;
           margin-bottom: 30px; } }
       @media only screen and (max-width: 767px) and (min-width: 5px) {
         body .contFooter .footContacto {
           display: block;
-          width: 100%;
+          width: 80%;
           margin-bottom: 30px; } }
       body .contFooter .footContacto .footElement img {
         display: inline; }
@@ -363,12 +379,12 @@ body {
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
         body .contFooter .mediosPago {
           display: block;
-          width: 50%;
+          width: 40%;
           margin-bottom: 30px; } }
       @media only screen and (max-width: 767px) and (min-width: 5px) {
         body .contFooter .mediosPago {
           display: block;
-          width: 100%;
+          width: 80%;
           margin-bottom: 30px; } }
     body .contFooter .newsletter {
       margin-top: 2rem;
@@ -378,12 +394,12 @@ body {
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
         body .contFooter .newsletter {
           display: block;
-          width: 50%;
+          width: 40%;
           margin-bottom: 30px; } }
       @media only screen and (max-width: 767px) and (min-width: 5px) {
         body .contFooter .newsletter {
           display: block;
-          width: 100%;
+          width: 80%;
           margin-bottom: 30px; } }
       body .contFooter .newsletter input[type="text"] {
         height: 2.25rem;

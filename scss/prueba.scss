@@ -7,7 +7,7 @@
 }
 
 body{
-    width: 100%;
+    
     background-color:white;
     color: white;
     text-align: center;
@@ -18,11 +18,15 @@ body{
     .dest{
         display: inline-block;
         margin-bottom: 3rem;
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+            max-width: 80%;
+        }
         .destacados{
             
             margin-left: 6rem;
             margin-right: 6rem;
-            width: 450px;
+            width: 30rem;
+            background-color: red;
             display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -34,10 +38,19 @@ body{
             font-weight: lighter;
             img{
                 width: 200px;
+                @media only screen and (max-width: 767px) and (min-width: 5px) {
+                    width: 100px;
+                }
                 &:hover{
                     transition: all 0.4s ease;
                     transform: scale(1.5,1.5);
                 }
+            }
+            @media only screen and (max-width: 767px) and (min-width: 5px) {
+                    width: 50%;
+                justify-content: center;
+                display: block;
+
             }
         }
     }
@@ -164,6 +177,9 @@ body{
         color: black;
         font-family: "Dela Gothic One", cursive;
         font-weight: lighter;
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+            width: 80%;
+        }
         .seccion__lista{
           li{
               margin: 20px;
@@ -364,13 +380,15 @@ body{
         }
     }
     .contFooter{
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+            max-width: 100%;
+        }
         border-top: 2px rgb(182, 182, 182) solid;
         height: 10rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        position: relative;
         flex-wrap: wrap;
         align-content: flex-start;
         background-color: white;
@@ -389,12 +407,12 @@ body{
             display:inline-block;
             @media only screen and (max-width: 1023px) and (min-width: 768px) {
                 display:block;
-                width: 50%;
+                width: 40%;
                 margin-bottom: 30px;
             }
             @media only screen and (max-width: 767px) and (min-width: 5px) {
                 display:block;
-                width: 100%;
+                width: 80%;
                 margin-bottom: 30px;
             }
             
@@ -420,12 +438,12 @@ body{
             width: 25%;
             @media only screen and (max-width: 1023px) and (min-width: 768px) {
                 display:block;
-                width: 50%;
+                width: 40%;
                 margin-bottom: 30px;
             }
             @media only screen and (max-width: 767px) and (min-width: 5px) {
                 display:block;
-                width: 100%;
+                width: 80%;
                 margin-bottom: 30px;
             }
             .footElement{
@@ -454,12 +472,12 @@ body{
             width: 25%;
             @media only screen and (max-width: 1023px) and (min-width: 768px) {
                 display:block;
-                width: 50%;
+                width: 40%;
                 margin-bottom: 30px;
             }
             @media only screen and (max-width: 767px) and (min-width: 5px) {
                 display:block;
-                width: 100%;
+                width: 80%;
                 margin-bottom: 30px;
             }
         }  
@@ -470,12 +488,12 @@ body{
             width: 25%;
             @media only screen and (max-width: 1023px) and (min-width: 768px) {
                 display:block;
-                width: 50%;
+                width: 40%;
                 margin-bottom: 30px;
             }
             @media only screen and (max-width: 767px) and (min-width: 5px) {
                 display:block;
-                width: 100%;
+                width: 80%;
                 margin-bottom: 30px;
             }
             input[type="text"] {
