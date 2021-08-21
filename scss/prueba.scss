@@ -144,8 +144,8 @@ body{
             }
             li{
                 display: inline-block;
-                padding-right: 0;
-                padding-left: 0;
+                padding-right: 2rem;
+                padding-left: 2rem;
                 position: relative; 
             }
             .prod{
@@ -556,6 +556,9 @@ body{
                     background-color: white;
                     margin: 0rem;
                     padding: 0rem;
+                    @media only screen and (max-width: 767px) and (min-width: 5px) {
+                        width: 60vw;
+                    }
                 }
             }
         }
