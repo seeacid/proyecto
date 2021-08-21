@@ -4,6 +4,7 @@
   box-sizing: border-box; }
 
 body {
+  width: 100%;
   background-color: white;
   color: white;
   text-align: center; }
@@ -13,12 +14,9 @@ body {
   body .dest {
     display: inline-block;
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 767px) and (min-width: 5px) {
-      body .dest {
-        max-width: 80%; } }
     body .dest .destacados {
-      margin-left: 6rem;
-      margin-right: 6rem;
+      margin-left: auto;
+      margin-right: auto;
       width: 30rem;
       background-color: white;
       display: flex;
@@ -38,6 +36,9 @@ body {
         body .dest .destacados img:hover {
           transition: all 0.4s ease;
           transform: scale(1.5, 1.5); }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .dest .destacados img {
+            width: 200px; } }
       @media only screen and (max-width: 767px) and (min-width: 5px) {
         body .dest .destacados {
           width: 50%;
@@ -106,6 +107,7 @@ body {
       margin-bottom: 30px;
       z-index: 1; }
       body .contHeader .navList ul {
+        padding-left: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -114,10 +116,13 @@ body {
         @media only screen and (max-width: 1023px) and (min-width: 5px) {
           body .contHeader .navList ul {
             flex-direction: column; } }
+        body .contHeader .navList ul .fcon {
+          margin-top: 1rem;
+          margin-bottom: 1rem; }
       body .contHeader .navList li {
         display: inline-block;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 0;
+        padding-left: 0;
         position: relative; }
       body .contHeader .navList .prod {
         padding-bottom: 30px;
@@ -133,6 +138,7 @@ body {
             body .contHeader .navList .prod:hover ul li a:hover {
               color: #222222; }
         body .contHeader .navList .prod ul {
+          padding: 0;
           position: absolute;
           top: 30px;
           display: none;
@@ -153,9 +159,6 @@ body {
     color: black;
     font-family: "Dela Gothic One", cursive;
     font-weight: lighter; }
-    @media only screen and (max-width: 767px) and (min-width: 5px) {
-      body .seccion {
-        width: 80%; } }
     body .seccion .seccion__lista li {
       margin: 20px;
       padding: 20px; }
@@ -186,10 +189,16 @@ body {
         @media only screen and (max-width: 1023px) and (min-width: 768px) {
           body .seccion .seccion__grilla .seccion__grilla__foto {
             display: block; } }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .seccion .seccion__grilla .seccion__grilla__foto img {
+            width: 80vw; } }
       body .seccion .seccion__grilla .seccion__grilla__caracteristicas {
         grid-area: car;
         justify-self: start;
         align-self: end; }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .seccion .seccion__grilla .seccion__grilla__caracteristicas {
+            width: 80vw; } }
         @media only screen and (max-width: 1023px) and (min-width: 768px) {
           body .seccion .seccion__grilla .seccion__grilla__caracteristicas {
             display: block; } }
@@ -198,6 +207,9 @@ body {
       body .seccion .seccion__grilla .seccion__grilla__instrucciones {
         grid-area: ins;
         justify-self: start; }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .seccion .seccion__grilla .seccion__grilla__instrucciones {
+            width: 80vw; } }
         @media only screen and (max-width: 1023px) and (min-width: 768px) {
           body .seccion .seccion__grilla .seccion__grilla__instrucciones {
             display: block; } }
@@ -207,6 +219,9 @@ body {
         grid-area: size;
         align-self: start;
         margin-bottom: 2rem; }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .seccion .seccion__grilla .seccion__grilla__talles {
+            width: 80vw; } }
         @media only screen and (max-width: 1023px) and (min-width: 768px) {
           body .seccion .seccion__grilla .seccion__grilla__talles {
             display: block; } }
@@ -216,6 +231,9 @@ body {
         margin: 0 auto;
         text-align: center;
         font-family: "Roboto", sans-serif; }
+        @media only screen and (max-width: 767px) and (min-width: 5px) {
+          body .seccion .seccion__grilla .sizeChart table {
+            width: 80vw; } }
       @media only screen and (max-width: 1023px) and (min-width: 5px) {
         body .seccion .seccion__grilla .seccion__grilla__comprar {
           display: block;
@@ -297,7 +315,6 @@ body {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      position: relative;
       flex-wrap: wrap; }
       body .seccion .seccion__productos .productox {
         display: inline-block;
@@ -321,7 +338,10 @@ body {
     line-height: 25pt; }
     @media only screen and (max-width: 767px) and (min-width: 5px) {
       body .contFooter {
-        max-width: 100%; } }
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto; } }
     body .contFooter h5 {
       text-align: center;
       font-size: 1.1rem;
@@ -386,6 +406,9 @@ body {
       height: 9rem;
       display: inline-block;
       width: 25%; }
+      @media only screen and (max-width: 767px) and (min-width: 5px) {
+        body .contFooter .mediosPago img {
+          width: 140px; } }
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
         body .contFooter .mediosPago {
           display: block;
