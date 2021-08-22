@@ -119,6 +119,9 @@ body {
         body .contHeader .navList ul .fcon {
           margin-top: 1rem;
           margin-bottom: 1rem; }
+          @media only screen and (max-width: 1023px) and (min-width: 5px) {
+            body .contHeader .navList ul .fcon {
+              margin-bottom: 0; } }
       body .contHeader .navList li {
         display: inline-block;
         padding-right: 2rem;
@@ -159,9 +162,43 @@ body {
     color: black;
     font-family: "Dela Gothic One", cursive;
     font-weight: lighter; }
+    body .seccion .seccion__dealers {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50vw;
+      margin-left: auto;
+      margin-right: auto; }
+      @media only screen and (max-width: 1023px) and (min-width: 5px) {
+        body .seccion .seccion__dealers {
+          width: 80vw; } }
+      body .seccion .seccion__dealers .seccion__dealers__box {
+        border: #7c7c7c solid 3px;
+        margin: 2rem;
+        width: 250px; }
+        body .seccion .seccion__dealers .seccion__dealers__box .local {
+          margin: 0.5rem;
+          color: red;
+          font-size: 12pt;
+          font-weight: bold; }
+        body .seccion .seccion__dealers .seccion__dealers__box .localidad {
+          font-size: 12pt;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif; }
+        body .seccion .seccion__dealers .seccion__dealers__box .direccion {
+          font-size: 12pt;
+          font-weight: lighter;
+          font-family: "Roboto", sans-serif;
+          margin-bottom: 0.5rem; }
     body .seccion .seccion__lista li {
       margin: 20px;
       padding: 20px; }
+    body .seccion .seccion__lista .tutorial {
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 1023px) and (min-width: 5px) {
+        body .seccion .seccion__lista .tutorial {
+          width: 70vw; } }
     body .seccion .seccion__grilla {
       position: relative;
       left: 25%;
@@ -351,6 +388,8 @@ body {
       height: 9rem;
       width: 25%;
       display: inline-block; }
+      body .contFooter .navegacion ul {
+        padding-left: 0; }
       @media only screen and (max-width: 1023px) and (min-width: 768px) {
         body .contFooter .navegacion {
           display: block;

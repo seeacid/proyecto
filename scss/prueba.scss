@@ -140,6 +140,10 @@ body{
                 .fcon{
                     margin-top: 1rem;
                     margin-bottom: 1rem;
+                    @media only screen and (max-width: 1023px) and (min-width: 5px) {
+                        margin-bottom: 0;
+                    }
+
                 }
             }
             li{
@@ -197,12 +201,52 @@ body{
         color: black;
         font-family: "Dela Gothic One", cursive;
         font-weight: lighter;
-       
+        .seccion__dealers{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 50vw;
+            margin-left: auto;
+            margin-right:auto;
+            @media only screen and (max-width: 1023px) and (min-width: 5px){
+                width: 80vw;
+            }
+            .seccion__dealers__box{
+                border: rgb(124, 124, 124) solid 3px;
+                margin: 2rem;
+                width: 250px;
+                .local{
+                    margin: 0.5rem;
+                    color: red;
+                    font-size: 12pt;
+                    font-weight: bold;
+                }
+                .localidad{
+                    font-size: 12pt;
+                    font-weight: bold;
+                    font-family: "Roboto", sans-serif;
+                }
+                .direccion{
+                    font-size: 12pt;
+                    font-weight: lighter;
+                    font-family: "Roboto", sans-serif;
+                    margin-bottom: 0.5rem;
+                }
+                
+            }
+        }
         .seccion__lista{
           li{
               margin: 20px;
               padding: 20px;
-          }  
+            }  
+            .tutorial{
+                margin-bottom: 2rem;
+                @media only screen and (max-width: 1023px) and (min-width: 5px) {
+                    width: 70vw;
+                }
+            }
         }
         .seccion__grilla{
             position: relative;
@@ -442,6 +486,9 @@ body{
             height: 9rem;
             width: 25%;
             display:inline-block;
+            ul{
+                padding-left: 0;
+            }
             @media only screen and (max-width: 1023px) and (min-width: 768px) {
                 display:block;
                 width: 40%;
