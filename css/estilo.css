@@ -281,6 +281,11 @@ body {
         padding-bottom: 10px;
         padding-top: 10px;
         margin: 0px; }
+      body .seccion .seccion__grilla .seccion__grilla__comprar .rebaja {
+        color: gray;
+        text-decoration: line-through;
+        font-size: 12pt;
+        margin: 0; }
     body .seccion .seccion__formulario {
       height: 35rem;
       position: relative;
@@ -357,6 +362,9 @@ body {
         display: inline-block;
         padding-left: 100px;
         padding-right: 100px; }
+        body .seccion .seccion__productos .productox .rebaja {
+          color: gray;
+          text-decoration: line-through; }
         body .seccion .seccion__productos .productox img:hover {
           transition: all 0.4s ease;
           transform: scale(1.5, 1.5); }
